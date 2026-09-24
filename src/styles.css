@@ -111,9 +111,10 @@ small {
 }
 .genesis-logo span {
   display: block;
-  font-size: 30px;
+  font-size: 34px;
   margin-top: 25px;
-  color: #c5ede6;
+  color: #37e6d1;
+  text-shadow: 0 0 22px #37e6d12f;
 }
 .burst,
 .shockwave {
@@ -135,9 +136,19 @@ small {
   animation: burst 1s 2.7s both;
 }
 .shockwave {
-  width: 650px;
-  height: 650px;
-  border: 2px solid #8efff0;
+  width: 520px;
+  height: 520px;
+  border: 0;
+  background: radial-gradient(
+    circle,
+    #ffffff 0%,
+    #cafff4 5%,
+    #72f8df99 15%,
+    #39c6ff38 34%,
+    #39c6ff10 52%,
+    transparent 72%
+  );
+  filter: blur(18px);
   animation: shock 1.2s 2.75s both;
 }
 @keyframes resolve {
@@ -1665,7 +1676,7 @@ h3 {
 .shockwave {
   animation-duration: 1.45s;
   animation-delay: 6.55s;
-  filter: blur(2px);
+  filter: blur(18px);
 }
 /* Text-only workflow and state nodes sit in light, not geometry. */
 .workflow-core,
@@ -1864,3 +1875,4 @@ h3 {
     display: none;
   }
 }
+

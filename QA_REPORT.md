@@ -44,3 +44,11 @@ Pages source is already set to GitHub Actions. The original PowerPoint remains l
 - Added borderless white/teal mist for central hubs, record state, delivery-loop labels, runway checkpoints and opportunity actions.
 - Replaced the scene 6 connector with distributed falling stars and scene 11 arcs with a straight connection. Adjusted scene 5, 8, 12 and 16 label placement.
 - Reviewed the changed scenes in the production preview, including the opening accumulation, burst and settled logo. The earlier full browser suite results above describe the first release; this pass uses focused browser visual checks plus production build and note/asset validation.
+
+## Connector consistency pass — 24 September 2026
+
+- Applied a shared tapered-opacity gradient and blurred underglow to connector paths, including curved, horizontal and vertical routes, while preserving every scene's geometry and star travel.
+- Replaced the opening shockwave ring with a borderless blurred light bloom and varied particle acceleration so the peak reads as radiating light rather than a circular rim.
+- Updated the Microsoft Fabric caption to match the teal ACTION accent and increased it from 30px to 34px.
+- Visually checked scenes 3, 7, 8, 9 and 18, plus the opening at the timed burst and settled states. Production build and all 19-scene validations passed.
+

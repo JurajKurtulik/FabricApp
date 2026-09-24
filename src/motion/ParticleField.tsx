@@ -90,7 +90,10 @@ export function ParticleField({
             }
           } else {
             const u = (t - 6.55) / 1.45;
-            const distance = u * (350 + p.distance * 0.4);
+            // Accelerate outward at different rates so the burst reads as
+            // irregular radiating light rather than a circular particle rim.
+            const distance =
+              u * u * (300 + p.distance * 0.65) * (0.55 + p.speed * 0.65);
             x = 1267 + Math.cos(p.angle) * distance;
             y = 518 + Math.sin(p.angle) * distance;
             alpha *= 1 - u;
@@ -132,3 +135,4 @@ export function ParticleField({
   }, [opening, closing, reduced]);
   return <canvas ref={ref} className="particles" aria-hidden="true" />;
 }
+
