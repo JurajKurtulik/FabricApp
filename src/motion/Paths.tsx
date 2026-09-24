@@ -19,19 +19,45 @@ export function DrawPath({
     />
   );
 }
-export function DataPulse({ d, delay = 0 }: { d: string; delay?: number }) {
+export function DataPulse({
+  d,
+  delay = 0,
+  duration = 6,
+}: {
+  d: string;
+  delay?: number;
+  duration?: number;
+}) {
+  const reduced = useReducedMotion();
+  if (reduced) return null;
   return (
-    <path
-      className="data-pulse"
-      d={d}
-      fill="none"
-      stroke="#7dffed"
-      strokeWidth="3"
-      pathLength="100"
-      strokeDasharray="2 98"
-      style={{ animationDelay: `${delay}s` }}
-    />
+    <g
+      className="data-pulse star-pulse"
+      style={{
+        offsetPath: `path("${d}")`,
+        animationDelay: `-${delay}s`,
+        animationDuration: `${duration}s`,
+      }}
+    >
+      <circle r="12" fill="#73ffe1" opacity=".1" className="pulse-halo" />
+      <circle r="5" fill="#9dffeb" opacity=".35" className="pulse-soft" />
+      <circle r="1.8" fill="#effffb" opacity=".95" />
+    </g>
   );
+}
+/** Connect the edges of a source mist and destination icon, never the label. */
+export function spoke(
+  cx: number,
+  cy: number,
+  x: number,
+  y: number,
+  start = 85,
+  end = 38,
+) {
+  const length = Math.hypot(x - cx, y - cy);
+  const dx = (x - cx) / length,
+    dy = (y - cy) / length;
+  return `M${cx + dx * start} ${cy + dy * start}L${x - dx * end} ${y - dy * end}`;
 }
 export function Paths({ paths }: { paths: string[] }) {
   return (

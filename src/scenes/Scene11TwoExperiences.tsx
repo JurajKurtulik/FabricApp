@@ -10,12 +10,9 @@ export default function Scene11TwoExperiences() {
   return (
     <>
       <Title n={11} section="10 / SAME EVENT, DIFFERENT JOB" />
-      <div className="lens lens-left" />
-      <div className="lens lens-right" />
-      <Paths
-        paths={["M960 575Q760 435 600 565", "M960 575Q1160 435 1320 565"]}
-      />
-      <At x={960} y={420} width={260}>
+
+      <Paths paths={["M795 680L1125 680"]} />
+      <At x={960} y={570} width={260}>
         <BusinessEvent />
       </At>
       <div className="experience left lower">

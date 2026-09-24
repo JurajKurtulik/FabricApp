@@ -1,5 +1,5 @@
 import { Title, At, Node } from "../visuals/Elements";
-import { Paths, Orbit } from "../motion/Paths";
+import { Paths, Orbit, spoke } from "../motion/Paths";
 export default function Scene12Patterns() {
   return (
     <>
@@ -14,9 +14,11 @@ export default function Scene12Patterns() {
           [960, 365],
           [1520, 415],
           [1520, 825],
-          [960, 915],
+          [960, 865],
           [400, 825],
-        ].map(([x, y]) => `M960 625L${x} ${y}`)}
+        ].map(([x, y]) =>
+          spoke(960, 625, x, y, x === 960 && y > 625 ? 150 : 100, x === 960 && y < 625 ? 145 : 34),
+        )}
       />
       {[
         ["fraud", "FRAUD", "Investigate"],
@@ -29,7 +31,7 @@ export default function Scene12Patterns() {
         <At
           key={n}
           x={[400, 960, 1520, 1520, 960, 400][i]}
-          y={[415, 365, 415, 825, 915, 825][i]}
+          y={[415, 365, 415, 825, 865, 825][i]}
           width={430}
         >
           <Node name={n as "fraud"} label={l} verb={v} size={65} />

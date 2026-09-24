@@ -26,7 +26,7 @@ Open the URL printed by Vite, including `/FabricApp/`. Direct scene links use `/
 - O: scene overview (also available via the navigation button)
 - Esc: close overlay and leave fullscreen
 
-One action advances one full scene. Navigation fades after 2.5 seconds of inactivity. All content appears automatically during entrance; the last scene does not auto-advance. The stage scales proportionally to preserve titles and logos on smaller screens. Notes are only mounted when explicitly opened. Reduced-motion preferences disable animated effects. Canvas pauses on tab hiding and is limited to 100 particles with DPR capped at 2.
+One action advances one full scene. Navigation fades after 2.5 seconds of inactivity. All content appears automatically during entrance; the last scene does not auto-advance. The stage scales proportionally to preserve titles and logos on smaller screens. Notes are only mounted when explicitly opened. Reduced-motion preferences disable animated effects. Canvas pauses on tab hiding and is limited to 110 ambient particles (260 during the eight-second opening) with DPR capped at 2.
 
 ## GitHub Pages
 

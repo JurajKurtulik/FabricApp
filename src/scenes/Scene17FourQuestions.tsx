@@ -1,6 +1,7 @@
+import { MistGlow } from "../visuals/MistGlow";
 import { Product } from "../visuals/Product";
 import { Title, At } from "../visuals/Elements";
-import { Paths, Orbit } from "../motion/Paths";
+import { Paths, Orbit, spoke } from "../motion/Paths";
 export default function Scene17FourQuestions() {
   return (
     <>
@@ -8,16 +9,17 @@ export default function Scene17FourQuestions() {
       <Orbit rx={540} ry={245} />
       <At x={960} y={630}>
         <div className="application-core">
+          <MistGlow />
           <Product name="apps" size={100} />
           <strong>APPLICATION</strong>
         </div>
       </At>
       <Paths
         paths={[
-          "M960 630L450 445",
-          "M960 630L1470 445",
-          "M960 630L450 835",
-          "M960 630L1470 835",
+          spoke(960, 630, 450, 445, 160, 210),
+          spoke(960, 630, 1470, 445, 160, 210),
+          spoke(960, 630, 450, 835, 160, 210),
+          spoke(960, 630, 1470, 835, 160, 210),
         ]}
       />
       {[

@@ -1,5 +1,5 @@
 import { Title, At, Node } from "../visuals/Elements";
-import { Paths, Orbit } from "../motion/Paths";
+import { Paths, Orbit, spoke } from "../motion/Paths";
 export default function Scene07Focus() {
   return (
     <>
@@ -21,7 +21,7 @@ export default function Scene07Focus() {
           [1630, 700],
           [1320, 890],
           [1020, 750],
-        ].map(([x, y]) => `M1320 625L${x} ${y}`)}
+        ].map(([x, y]) => spoke(1320, 625, x, y, 110, 95))}
       />
       {["Database", "APIs", "Authentication", "Hosting", "Deployment"].map(
         (s, i) => (

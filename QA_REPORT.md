@@ -19,7 +19,7 @@
 ## Limits
 
 - The full 45-minute wall-clock soak and 20+ minute animation review have not been run. The short soak is not evidence that the entire long-duration acceptance criterion passed.
-- 60fps on a typical presentation laptop is a target, not a measured guarantee. Canvas uses 100 particles, a DPR cap of 2, no per-frame object creation, cancellation on hidden documents, and cleanup on unmount.
+- 60fps on a typical presentation laptop is a target, not a measured guarantee. Canvas uses 110 ambient particles (260 during the eight-second opening), a DPR cap of 2, no per-frame object creation, cancellation on hidden documents, and cleanup on unmount.
 - GitHub Pages deployment succeeded on 24 September 2026 in JurajKurtulik/FabricApp. GitHub Actions ran npm ci, build, validation, artifact upload and deployment successfully. Live opening and refreshed /FabricApp/#/10 were verified, with official assets loaded and no captured runtime errors.
 - Rayfin and GitHub Copilot logos are absent. Text names are used. The supplied official Apps item graphic is used; no dedicated Fabric Apps wordmark was verified. See ASSETS_TODO.md.
 
@@ -36,3 +36,11 @@ Live presentation: https://jurajkurtulik.github.io/FabricApp/
 Verified deployment: https://github.com/JurajKurtulik/FabricApp/actions/runs/36038476501
 
 Pages source is already set to GitHub Actions. The original PowerPoint remains local and is not required to build or run the site.
+
+## Visual refinement pass — 24 September 2026
+
+- Replaced patterned particle coordinates with seeded independent randomness throughout the deck. Extended the opening to eight seconds with 260 incoming stars, a growing light and a brighter burst.
+- Replaced moving SVG dash segments with layered circular star cores and blurred halos. Corrected connector anchors and foreground stacking.
+- Added borderless white/teal mist for central hubs, record state, delivery-loop labels, runway checkpoints and opportunity actions.
+- Replaced the scene 6 connector with distributed falling stars and scene 11 arcs with a straight connection. Adjusted scene 5, 8, 12 and 16 label placement.
+- Reviewed the changed scenes in the production preview, including the opening accumulation, burst and settled logo. The earlier full browser suite results above describe the first release; this pass uses focused browser visual checks plus production build and note/asset validation.

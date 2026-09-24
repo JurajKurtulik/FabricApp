@@ -22,7 +22,7 @@ export default function Scene08ReportVsApp() {
       <div className="experience left">
         <AnalyticsSurface />
       </div>
-      <At x={960} y={650} width={220}>
+      <At x={960} y={555} width={220}>
         <BusinessEvent />
       </At>
       <div className="experience right">

@@ -1,3 +1,4 @@
+import { MistGlow } from "../visuals/MistGlow";
 import { Title, At, Node } from "../visuals/Elements";
 import { Paths } from "../motion/Paths";
 export default function Scene10DataArchitecture() {
@@ -16,8 +17,8 @@ export default function Scene10DataArchitecture() {
       </At>
       <Paths
         paths={[
-          "M390 490L570 630L390 810",
-          "M680 490L570 630L680 810",
+          "M350 490L570 630L350 805",
+          "M720 490L570 630L720 805",
           "M570 630L1280 630",
           "M1280 630L1450 480",
           "M1280 630L1650 580",
@@ -36,7 +37,10 @@ export default function Scene10DataArchitecture() {
         </At>
       ))}
       <At x={570} y={630}>
-        <div className="record-anchor">Business record</div>
+        <div className="record-anchor">
+          <MistGlow />
+          Business record
+        </div>
       </At>
       <At x={950} y={570} width={350}>
         <div className="correlation-label">
@@ -54,6 +58,7 @@ export default function Scene10DataArchitecture() {
       ].map(([l, x, y]) => (
         <At key={l} x={Number(x)} y={Number(y)} width={220}>
           <div className={"state-node " + (l === "Case" ? "primary" : "")}>
+            <MistGlow />
             {l}
           </div>
         </At>

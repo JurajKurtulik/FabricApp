@@ -1,11 +1,11 @@
 import { Product } from "../visuals/Product";
 import { Title } from "../visuals/Elements";
-import { Paths } from "../motion/Paths";
+import { FallingStars } from "../motion/FallingStars";
 export default function Scene06FabricAppsRayfin() {
   return (
     <>
       <Title n={6} section="05 / TWO NAMES, ONE MODEL" />
-      <Paths paths={["M960 420L960 820"]} />
+      <FallingStars />
       <div className="technical-layer runtime">
         <Product name="apps" size={115} />
         <div>

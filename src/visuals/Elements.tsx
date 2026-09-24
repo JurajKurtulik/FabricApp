@@ -1,3 +1,4 @@
+import { MistGlow } from "./MistGlow";
 import type { CSSProperties, ReactNode } from "react";
 import { Product } from "./Product";
 import { titles } from "../content/scenes";
@@ -51,7 +52,11 @@ export function Node({
   size?: number;
 }) {
   return (
-    <div className="node">
+    <div
+      className="node"
+      style={{ "--icon-size": `${size}px` } as CSSProperties}
+    >
+      <MistGlow />
       {name && <Product name={name} size={size} />}
       <strong>{label}</strong>
       {verb && <span>{verb}</span>}

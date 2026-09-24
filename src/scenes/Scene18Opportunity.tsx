@@ -1,3 +1,4 @@
+import { MistGlow } from "../visuals/MistGlow";
 import { Paths } from "../motion/Paths";
 export default function Scene18Opportunity() {
   return (
@@ -24,6 +25,7 @@ export default function Scene18Opportunity() {
         {["APPROVE", "INVESTIGATE", "ASSIGN", "ESCALATE", "RESOLVE"].map(
           (s) => (
             <span key={s} className="drift">
+              <MistGlow />
               {s}
             </span>
           ),

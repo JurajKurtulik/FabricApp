@@ -1,3 +1,4 @@
+import { MistGlow } from "../visuals/MistGlow";
 import { Product } from "../visuals/Product";
 import { Title, At } from "../visuals/Elements";
 import { DrawPath, DataPulse } from "../motion/Paths";
@@ -23,11 +24,12 @@ export default function Scene16Runway() {
       </At>
       {["TENANT", "CAPACITY", "WORKSPACE", "TOOLS", "DATA ACCESS"].map(
         (s, i) => (
-          <At key={s} x={420 + i * 230} y={880 - i * 100} width={350}>
+          <At key={s} x={530 + i * 230} y={880 - i * 100} width={350}>
             <div
               className="checkpoint"
               style={{ animationDelay: `${i * 0.15}s` }}
             >
+              <MistGlow />
               <span>0{i + 1}</span>
               <strong>{s}</strong>
             </div>
