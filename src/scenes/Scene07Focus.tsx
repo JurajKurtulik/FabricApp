@@ -15,13 +15,16 @@ export default function Scene07Focus() {
         <Node name="fabric" label="MANAGED CAPABILITIES" size={135} />
       </At>
       <Paths
+        nearEnd
         paths={[
           [1050, 425],
           [1570, 440],
           [1630, 700],
           [1320, 890],
           [1020, 750],
-        ].map(([x, y]) => spoke(1320, 625, x, y, 110, 95))}
+        ].map(([x, y], i) =>
+          spoke(1320, 625, x, y, 110, [0, 0, 95, 0, 95][i]),
+        )}
       />
       {["Database", "APIs", "Authentication", "Hosting", "Deployment"].map(
         (s, i) => (
@@ -37,3 +40,4 @@ export default function Scene07Focus() {
     </>
   );
 }
+

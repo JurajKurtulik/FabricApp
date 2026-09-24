@@ -13,9 +13,13 @@ function pathEndpoints(d: string) {
 export function DrawPath({
   d,
   accent = false,
+  soft = true,
+  nearEnd = false,
 }: {
   d: string;
   accent?: boolean;
+  soft?: boolean;
+  nearEnd?: boolean;
 }) {
   const reduced = useReducedMotion();
   const id = useId().replace(/:/g, "");
@@ -28,6 +32,19 @@ export function DrawPath({
     animate: { pathLength: 1 },
     transition: { duration: 1.05 },
   } as const;
+  if (!soft) {
+    return (
+      <motion.path
+        className="connector-solid"
+        d={d}
+        fill="none"
+        stroke={accent ? "#37e6d1" : "#397980"}
+        strokeWidth={accent ? 2.5 : 1.4}
+        strokeLinecap="round"
+        {...animation}
+      />
+    );
+  }
   return (
     <>
       <defs>
@@ -43,7 +60,11 @@ export function DrawPath({
           <stop offset=".16" stopColor={color} stopOpacity=".16" />
           <stop offset=".42" stopColor={color} stopOpacity=".62" />
           <stop offset=".56" stopColor="#b8fff0" stopOpacity=".78" />
-          <stop offset=".82" stopColor={color} stopOpacity=".16" />
+          <stop
+            offset={nearEnd ? ".93" : ".82"}
+            stopColor={color}
+            stopOpacity={nearEnd ? ".55" : ".16"}
+          />
           <stop offset="1" stopColor={color} stopOpacity="0" />
         </linearGradient>
         <filter id={glowId} x="-30%" y="-30%" width="160%" height="160%">
@@ -111,12 +132,18 @@ export function spoke(
     dy = (y - cy) / length;
   return `M${cx + dx * start} ${cy + dy * start}L${x - dx * end} ${y - dy * end}`;
 }
-export function Paths({ paths }: { paths: string[] }) {
+export function Paths({
+  paths,
+  nearEnd = false,
+}: {
+  paths: string[];
+  nearEnd?: boolean;
+}) {
   return (
     <svg className="diagram-paths" viewBox="0 0 1920 1080" aria-hidden="true">
       {paths.map((d, i) => (
         <g key={d}>
-          <DrawPath d={d} />
+          <DrawPath d={d} nearEnd={nearEnd} />
           <DataPulse d={d} delay={i * 0.6} />
         </g>
       ))}

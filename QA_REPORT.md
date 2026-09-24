@@ -52,3 +52,9 @@ Pages source is already set to GitHub Actions. The original PowerPoint remains l
 - Updated the Microsoft Fabric caption to match the teal ACTION accent and increased it from 30px to 34px.
 - Visually checked scenes 3, 7, 8, 9 and 18, plus the opening at the timed burst and settled states. Production build and all 19-scene validations passed.
 
+## Scene-specific connector polish — 24 September 2026
+
+- Extended slide 7's Database, APIs and Hosting spokes with a tighter terminal fade; consolidated slide 8 to one continuous bridge; and lengthened slide 12's Manufacturing spoke.
+- Removed the dotted orbit from slide 15 and restored a brighter continuous loop. Restored slide 16's solid, constant-width runway outline.
+- Visually checked slides 7, 8, 12, 15 and 16 in the production preview. Production build and all 19-scene validations passed.
+

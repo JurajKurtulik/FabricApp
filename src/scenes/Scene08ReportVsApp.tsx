@@ -18,7 +18,7 @@ export default function Scene08ReportVsApp() {
         <span>FABRIC APP</span>
         <h3>What should I do next?</h3>
       </div>
-      <Paths paths={["M960 650L800 650", "M960 650L1120 650"]} />
+      <Paths paths={["M800 650L1120 650"]} />
       <div className="experience left">
         <AnalyticsSurface />
       </div>
@@ -31,3 +31,4 @@ export default function Scene08ReportVsApp() {
     </>
   );
 }
+

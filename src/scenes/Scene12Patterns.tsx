@@ -17,7 +17,14 @@ export default function Scene12Patterns() {
           [960, 865],
           [400, 825],
         ].map(([x, y]) =>
-          spoke(960, 625, x, y, x === 960 && y > 625 ? 150 : 100, x === 960 && y < 625 ? 145 : 34),
+          spoke(
+            960,
+            625,
+            x,
+            y,
+            x === 960 && y > 625 ? 150 : 100,
+            x === 960 && y < 625 ? 100 : 34,
+          ),
         )}
       />
       {[
@@ -40,3 +47,4 @@ export default function Scene12Patterns() {
     </>
   );
 }
+

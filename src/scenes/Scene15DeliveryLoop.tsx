@@ -1,14 +1,13 @@
 import { MistGlow } from "../visuals/MistGlow";
 import { Product } from "../visuals/Product";
 import { Title, At } from "../visuals/Elements";
-import { Orbit, DrawPath, DataPulse } from "../motion/Paths";
+import { DrawPath, DataPulse } from "../motion/Paths";
 export default function Scene15DeliveryLoop() {
   return (
     <>
       <Title n={15} section="14 / DELIVERY LOOP" />
-      <Orbit cx={780} cy={625} rx={425} ry={270} />
       <svg className="diagram-paths" viewBox="0 0 1920 1080" aria-hidden="true">
-        <DrawPath d="M780 355A425 270 0 1 1 779 355" accent />
+        <DrawPath d="M780 355A425 270 0 1 1 779 355" accent soft={false} />
         <DataPulse d="M780 355A425 270 0 1 1 779 355" duration={20} />
       </svg>
       {["Describe", "Build", "Test", "Deploy", "Learn"].map((s, i) => (
@@ -48,3 +47,4 @@ export default function Scene15DeliveryLoop() {
     </>
   );
 }
+

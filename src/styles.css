@@ -1507,6 +1507,12 @@ h3 {
     delivery-first 1.2s linear,
     pulse-path 20s 1.2s linear infinite;
 }
+.scene-15 .connector-solid {
+  stroke: #53e2d0;
+  stroke-width: 2.4;
+  opacity: 0.72;
+  filter: drop-shadow(0 0 6px #37e6d166);
+}
 @keyframes delivery-first {
   from {
     stroke-dashoffset: 100;

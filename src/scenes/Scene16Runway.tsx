@@ -8,7 +8,7 @@ export default function Scene16Runway() {
       <Title n={16} section="15 / PREVIEW READINESS" />
       <svg className="runway-svg" viewBox="0 0 1920 1080" aria-hidden="true">
         <path d="M250 930L1490 350L1720 930Z" fill="#0d343533" />
-        <DrawPath d="M250 930L1490 350L1720 930" accent />
+        <DrawPath d="M250 930L1490 350L1720 930" accent soft={false} />
         <DataPulse d="M350 930L1490 350" />
         <DataPulse d="M1550 930L1490 350" />
         {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
@@ -42,3 +42,4 @@ export default function Scene16Runway() {
     </>
   );
 }
+
