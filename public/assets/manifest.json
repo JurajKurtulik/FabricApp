@@ -1,0 +1,95 @@
+{
+  "fabric": {
+    "path": "assets/fabric/fabric_48_color.svg",
+    "source": "assets\\Icons\\v6.1.0\\package\\dist\\svg\\fabric_48_color.svg",
+    "label": "Microsoft Fabric"
+  },
+  "apps": {
+    "path": "assets/fabric/apps_64_item.svg",
+    "source": "assets\\Icons\\v6.1.0\\package\\dist\\svg\\apps_64_item.svg",
+    "label": "Fabric application item (supplied Apps asset)"
+  },
+  "powerBI": {
+    "path": "assets/fabric/power_bi_48_color.svg",
+    "source": "assets\\Icons\\v6.1.0\\package\\dist\\svg\\power_bi_48_color.svg",
+    "label": "Power BI"
+  },
+  "rti": {
+    "path": "assets/fabric/real_time_intelligence_48_color.svg",
+    "source": "assets\\Icons\\v6.1.0\\package\\dist\\svg\\real_time_intelligence_48_color.svg",
+    "label": "Real-Time Intelligence"
+  },
+  "oneLake": {
+    "path": "assets/fabric/one_lake_48_color.svg",
+    "source": "assets\\Icons\\v6.1.0\\package\\dist\\svg\\one_lake_48_color.svg",
+    "label": "OneLake"
+  },
+  "lakehouse": {
+    "path": "assets/fabric/lakehouse_64_item.svg",
+    "source": "assets\\Icons\\v6.1.0\\package\\dist\\svg\\lakehouse_64_item.svg",
+    "label": "Lakehouse"
+  },
+  "warehouse": {
+    "path": "assets/fabric/data_warehouse_64_item.svg",
+    "source": "assets\\Icons\\v6.1.0\\package\\dist\\svg\\data_warehouse_64_item.svg",
+    "label": "Warehouse"
+  },
+  "eventhouse": {
+    "path": "assets/fabric/event_house_64_item.svg",
+    "source": "assets\\Icons\\v6.1.0\\package\\dist\\svg\\event_house_64_item.svg",
+    "label": "Eventhouse"
+  },
+  "semantic": {
+    "path": "assets/fabric/semantic_model_64_item.svg",
+    "source": "assets\\Icons\\v6.1.0\\package\\dist\\svg\\semantic_model_64_item.svg",
+    "label": "Semantic model"
+  },
+  "copilot": {
+    "path": "assets/fabric/copilot_48_color.svg",
+    "source": "assets\\Icons\\v6.1.0\\package\\dist\\svg\\copilot_48_color.svg",
+    "label": "Microsoft Copilot"
+  },
+  "governance": {
+    "path": "assets/fabric/purview_48_color.svg",
+    "source": "assets\\Icons\\v6.1.0\\package\\dist\\svg\\purview_48_color.svg",
+    "label": "Microsoft Purview"
+  },
+  "fraud": {
+    "path": "assets/microsoft/fraud.svg",
+    "source": "assets\\2024-microsoft-365-content-icons\\Teams Purple\\48x48 Grey & Purple Icon\\Fingerprint.svg",
+    "label": "Fingerprint"
+  },
+  "manufacturing": {
+    "path": "assets/microsoft/manufacturing.svg",
+    "source": "assets\\2024-microsoft-365-content-icons\\Teams Purple\\48x48 Grey & Purple Icon\\Settings.svg",
+    "label": "Settings"
+  },
+  "retail": {
+    "path": "assets/microsoft/retail.svg",
+    "source": "assets\\2024-microsoft-365-content-icons\\Teams Purple\\48x48 Grey & Purple Icon\\Shopping Bag.svg",
+    "label": "Shopping Bag"
+  },
+  "logistics": {
+    "path": "assets/microsoft/logistics.svg",
+    "source": "assets\\2024-microsoft-365-content-icons\\Teams Purple\\48x48 Grey & Purple Icon\\Top Speed.svg",
+    "label": "Top Speed"
+  },
+  "quality": {
+    "path": "assets/microsoft/quality.svg",
+    "source": "assets\\2024-microsoft-365-content-icons\\Teams Purple\\48x48 Grey & Purple Icon\\Data Trending.svg",
+    "label": "Data Trending"
+  },
+  "service": {
+    "path": "assets/microsoft/service.svg",
+    "source": "assets\\2024-microsoft-365-content-icons\\Teams Purple\\48x48 Grey & Purple Icon\\Person Wrench.svg",
+    "label": "Person Wrench"
+  },
+  "rayfin": {
+    "path": null,
+    "label": "Rayfin"
+  },
+  "githubCopilot": {
+    "path": null,
+    "label": "GitHub Copilot"
+  }
+}
