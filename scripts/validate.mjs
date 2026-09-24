@@ -28,9 +28,11 @@ const { speakerNotes: notes } = await import(
   "data:text/javascript;base64," + Buffer.from(compiled).toString("base64")
 );
 
-for (const match of spec.matchAll(
-  /## Scene (\d+) � ([\s\S]*?)(?=\n## Scene |\n# 10\. Navigation UI)/g,
-)) {
+const sceneSections = [...spec.matchAll(
+  /## Scene (\d+) \u2014 ([\s\S]*?)(?=\n## Scene |\n# 10\. Navigation UI)/g,
+)];
+assert.equal(sceneSections.length, 19, "All specification note sections must be checked");
+for (const match of sceneSections) {
   const expected = match[2]
     .split("### Speaker notes\n\n")[1]
     .split("\n\n---")[0]

@@ -1,6 +1,6 @@
 # From Insight to Action
 
-A 19-scene live presentation about Fabric Apps and Rayfin, built with React, TypeScript, Vite, Framer Motion, SVG and Canvas 2D. The supplied specification governs content and design. The PowerPoint is retained as the narrative source, not exported as HTML.
+A 19-scene live presentation about Fabric Apps and Rayfin, built with React, TypeScript, Vite, Framer Motion, SVG and Canvas 2D. The supplied specification governs content and design. The supplied PowerPoint informed the narrative; it is not included in this public web-app repository or exported as HTML.
 
 ## Run
 
@@ -32,7 +32,7 @@ One action advances one full scene. Navigation fades after 2.5 seconds of inacti
 
 The Vite base is `/FabricApp/`. `.github/workflows/deploy.yml` installs with `npm ci`, builds, validates notes/assets and deploys `dist` through GitHub Pages. Pushes to `main` or `master` and manual workflow dispatch are supported.
 
-In the GitHub repository, select **Settings → Pages → Build and deployment → Source: GitHub Actions**. If organizational policy disables Actions or Pages, an administrator must enable it. The target URL is `https://JurajKurtulik.github.io/FabricApp/`.
+GitHub Pages is configured with **Settings → Pages → Build and deployment → Source: GitHub Actions**. If organizational policy disables Actions or Pages, an administrator must enable it. The target URL is `https://JurajKurtulik.github.io/FabricApp/`.
 
 Repository: https://github.com/JurajKurtulik/FabricApp. The complete source and selected official assets are published here. The deployment workflow targets GitHub Pages; its latest run is available under Actions.
 

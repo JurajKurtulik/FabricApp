@@ -20,9 +20,19 @@
 
 - The full 45-minute wall-clock soak and 20+ minute animation review have not been run. The short soak is not evidence that the entire long-duration acceptance criterion passed.
 - 60fps on a typical presentation laptop is a target, not a measured guarantee. Canvas uses 100 particles, a DPR cap of 2, no per-frame object creation, cancellation on hidden documents, and cleanup on unmount.
-- No live GitHub Pages deployment could be performed: this supplied directory has no Git metadata, remote, or authenticated repository context. The workflow and subpath configuration are ready, and the production preview was tested at `/FabricApp/`.
+- GitHub Pages deployment succeeded on 24 September 2026 in JurajKurtulik/FabricApp. GitHub Actions ran npm ci, build, validation, artifact upload and deployment successfully. Live opening and refreshed /FabricApp/#/10 were verified, with official assets loaded and no captured runtime errors.
 - Rayfin and GitHub Copilot logos are absent. Text names are used. The supplied official Apps item graphic is used; no dedicated Fabric Apps wordmark was verified. See ASSETS_TODO.md.
 
 ## Deployment
 
 `deploy.yml` runs on pushes to main/master and manual dispatch. It uses Node 22, npm ci, build and validation, then uploads dist and deploys through the github-pages environment. Repository Pages source must be set to GitHub Actions.
+
+## Publication
+
+Repository: https://github.com/JurajKurtulik/FabricApp
+
+Live presentation: https://jurajkurtulik.github.io/FabricApp/
+
+Verified deployment: https://github.com/JurajKurtulik/FabricApp/actions/runs/36038476501
+
+Pages source is already set to GitHub Actions. The original PowerPoint remains local and is not required to build or run the site.
